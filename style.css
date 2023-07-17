@@ -1,0 +1,326 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700&display=swap');
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+:root{
+    /* primary */
+    --Very-Dark-Blue: hsl(243, 87%, 12%);
+    --Desaturated-Blue: hsl(238, 22%, 44%);
+
+    /* Accent  */
+    --Bright-Blue: hsl(224, 93%, 58%);
+    --Moderate-Cyan: hsl(170, 45%, 43%);
+
+    /* Neutral  */
+    --Light-Grayish-Blue: hsl(240, 75%, 98%);
+    --Light-Gray: hsl(0, 0%, 75%);
+
+}
+/* img{
+    max-width: 100%;
+    height: auto;
+} */
+body{
+    
+    font-family: 'Raleway', sans-serif;
+}
+h1,h3{
+    font-family: 'Open Sans', sans-serif;
+}
+p{
+    line-height: 1.5rem;
+}
+/* ============= header-start =================== */
+.container{
+    padding:50px;
+    padding-right: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow-x: hidden;
+}
+li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 60px;
+}
+
+/*================= header-end ================== */
+
+/* ================== main-Start================= */
+.files{
+    width: 623px;
+}
+ h1{
+    font-size: 2.2rem;
+    font-weight: 700;
+    line-height: 3.2rem;
+}
+ p {
+    margin: 30px 0;
+}
+input{
+    padding: 20px;
+    width: 400px;
+    margin-right: 20px;
+    border-radius: 0.5rem;
+}
+button{
+    border: none;
+    color: white;
+    background-color: var(--Bright-Blue);
+    width: 190px;
+    padding: 21.5px;
+    border-radius: .5rem;
+    font-weight: 700;
+    font-size: 1rem;
+}
+/* frist-section-end */
+.curve-img{
+    position: relative;
+    top:10px;
+    z-index: 10;
+}
+.second-section{
+    background-color: var(--Light-Grayish-Blue);
+    border-top-left-radius: 15px;
+}
+.productive{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+.card{
+    background-color: white;
+    width: 400px;
+    border-radius: .5rem;
+    padding:30px;
+    position: relative;
+    margin-bottom: 30px;
+    top:50px;
+    box-shadow: 2px 2px 2px 2px rgb(207, 204, 204);
+    
+}
+.card img{
+    margin-bottom: 5px;
+}
+.profile > img{
+    height: 30px;
+    border-radius: 50%;
+    float: left;
+    margin-top:20px;
+    margin-right: 10px;
+}
+.profile h6 {
+    padding-top: 27px;
+    line-height: 0;
+    margin-bottom: -12px;
+}
+.profile p{
+    font-size: .8rem;
+    line-height: 0;
+    
+}
+.productive h1{
+    margin-bottom: 10px;
+    font-size: 2.2rem;
+    font-weight: 700;
+    line-height: 3.2rem;
+}
+.productive >p {
+    margin: 10px 0;
+    width: 500px;
+}
+.productive a{
+    margin-top: 20px;
+    text-decoration: none;
+    padding-bottom: 10px;
+    /* transition: 0.3s ease-in-out; */
+}
+.productive a:hover{
+    /* color: #12302b; */
+    border-bottom-color: #12302b;
+  }
+
+  /* thrid-section end */
+
+.thrid-section{
+    background-color: var(--Desaturated-Blue);
+    color:white;
+}
+.btn{
+    width: 200px;
+    margin-top: 20px;
+}
+#email1{
+    width:450px;
+}
+.thrid-section > div >div> p{
+    width: 600px;
+}
+footer{
+    background-color: var(--Very-Dark-Blue);
+    color:white;
+    padding-bottom: 20px;
+}
+.contain{
+    padding:60px;
+    padding-bottom: 0;
+}
+.inner-contain{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+.phone-email{
+    display: grid;
+    grid-template-columns:.2fr 1fr;
+    grid-template-rows: .2fr 1fr;
+    align-items: center;
+    gap: 0 10px;
+    
+}
+.phone-email a{
+    margin-right: 33px;
+}
+.About-us li,.contact-us li{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height:40px
+}
+.phone-email a{
+    text-decoration: none;
+    color: white;
+}
+
+/* for moblie */
+@media (max-width:414px){
+    *{
+        padding: 0%;
+        margin:0%;
+        box-sizing: border-box;
+    }
+    body{
+        padding-top: 15px;
+        font-size: 1.2rem;
+    }
+    header{
+        margin-bottom: 50px;
+    }
+    .container{
+        padding:0px;
+        
+    }
+    .files{
+        width: 314px;
+        
+    }
+    .logo img{
+        margin-right: 35px;
+        height: 25px;
+        padding-left: 10px;
+
+    }
+    .nav ul{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .nav ul li{
+        margin-right: 10px;
+    }
+    .thrid-section > div{
+        flex-direction: column;
+    }
+    #email{
+        width: 314px;
+    }
+    .frist-section >div,.second-section > div{
+        flex-direction: column-reverse;
+    }
+    p , h1{
+        width: 100%;
+        text-align: center;
+        margin-top:30px;
+        
+    }
+    h1{
+        font-size: 1.6rem;
+        line-height: 1.8rem;
+        
+    }
+    .files button{
+        margin-top: 10px;
+        width:314px;
+
+    }
+    .curve-img{
+        background-image: url("./images/bg-curve-mobile.svg");
+    }
+    .second-section > div > div > h1{
+        font-size: 1.2rem;
+    }
+    .second-section > div > div > p{
+        font-size: 1.2rem;
+        width: 314px;
+    }
+    .second-section p{
+        text-align: start;
+    }
+    .second-section a{
+        text-align: center;
+        margin: 0 auto;
+    }
+    .inner-contain{
+        flex-direction: column;
+    }
+    #email1{
+        width: 250px;
+    }
+    .btn{
+        width:250px;
+        margin-bottom: 20px;
+    }
+    .card{
+        position: static;
+        width: 314px;
+        margin-bottom: 30px;
+        height: 280px;
+    }
+    .thrid-section >div >div > p {
+        width: 314px;
+    }
+    .contain{
+        padding-left: 30px;
+    }
+    .profile img{
+        clear: both;
+        position: relative;
+        top:-12px;
+    }
+    .profile p{
+        position: relative;
+        top: -10px;
+        left: -21px;
+      
+    }
+    .profile h6{
+        position: relative;
+        left: -1px;
+        top: -13px;
+    }
+    .card p {
+        text-align: center;
+        font-size: 1rem;
+        margin-bottom: 20px;
+    }
+    .productive-img img,.files-img img{
+        width: 250px;
+        height: auto;
+        margin: 0 auto;
+    }
+}
